@@ -13,15 +13,7 @@ public class OthelloGoalTest implements GoalTest {
 
 	@Override
 	public boolean isGoalState(Object arg0) {
-		if (arg0 instanceof Individual<?>) {
-
-			if (fitness.getValue((Individual<OthelloAction>) arg0) == fitness
-					.getCuttentState().width
-					* fitness.getCuttentState().width
-					* fitness.getCuttentState().width) {
-				return true;
-			}
-		}
+		
 		return false;
 	}
 }
